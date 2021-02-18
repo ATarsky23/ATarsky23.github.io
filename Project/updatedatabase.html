@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDepEXEo6o03kTwMCqCDSf_C6raCriHssw",
+    authDomain: "design10firebasebpm.firebaseapp.com",
+    databaseURL: "https://design10firebasebpm.firebaseio.com",
+    projectId: "design10firebasebpm",
+    storageBucket: "design10firebasebpm.appspot.com",
+    messagingSenderId: "868949478005",
+    appId: "1:868949478005:web:67f4b07947bb70043b063c",
+    measurementId: "G-PSV0QSEZC6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  database = firebase.database()
+
+	clubs = [
+	{
+
+		descripton: "...",
+		time: "time",
+		name: "Coding and Algorythms Acedemy"
+
+	},
+
+	{
+
+		descripton: "...",
+		time: "time",
+		name: "name"
+
+	},
+
+	{
+
+		descripton: "...",
+		time: "time",
+		name: "name"
+
+	},
+
+	{
+
+		descripton: "123",
+		time: "time",
+		name: "name"
+
+	}
+
+
+
+
+
+
+	]
+
+
+console.log(clubs)
+
+database.ref().set({
+	clubs
+}).then((result) => {
+	console.log("done")
+})
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
